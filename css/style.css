@@ -1,0 +1,322 @@
+body{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    margin: auto;
+    background-color: black;
+    font-family: 'Rajdhani', sans-serif;
+    color: blanchedalmond;
+    animation: transitionIn 1s;
+}
+
+/* TRANSITIONS */
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: rotateX(-75deg);
+        transform: translateY(-75px);
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+        transform: translateY(0);
+    }
+}
+
+
+/* HEADER
+*************************************** */
+
+header ul{
+    display: flex;
+    justify-content: space-evenly ;
+    margin: 0;
+    height: 75px;
+    align-items: center;
+}
+header nav ul li{
+    list-style: none;
+    text-align: center;
+}
+header nav ul li a{
+    text-decoration: none;
+    color:blanchedalmond;
+}
+a:hover{
+    font-weight: bold;
+    color: white;
+}
+
+.box{
+    display: block;
+    width: 350px;
+    height: 450px;
+    background-image: url(../img/etoiles1.jpg);
+    margin:auto;
+    text-align: center;
+}
+.border-box{
+    border-bottom: blanchedalmond solid 1px;
+    border-top: blanchedalmond solid 1px;
+    border-left: blanchedalmond solid 1px;
+    border-right: blanchedalmond solid 1px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+#a-propos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 150px;
+}
+.border-box-2{
+    border-bottom: blanchedalmond solid 1px;
+    border-left: blanchedalmond solid 1px;
+    margin-bottom: -50px;
+    margin-left: -50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+#happy-hour{
+    display: flex;
+    margin-bottom: 150px;
+    justify-content: space-around;
+}
+.happy-hour{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    padding-right: 150px;
+    padding-top: 20px;
+}
+#musique{
+    display: flex;
+    margin-bottom: 150px;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+.musique{
+    display: flex;
+    flex-direction: column;
+    text-align:left;
+    align-items: center;
+    padding-left: 150px;
+    padding-top: 40px;
+}
+
+#contactez-nous{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+.contact{
+    flex-direction: column;
+    margin-bottom: 35px;
+}
+h1{
+    font-family: 'MuseoModerno', cursive;
+    font-size: 70px;
+    color: white;
+}
+h2{
+    font-family: 'MuseoModerno', cursive;
+    font-size: 35px;
+    color: white;
+}
+h4{
+    color:white;
+}
+#carte{
+    margin-bottom: 50px;
+    filter:invert(1);
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer{
+    padding-top: 25px;
+}
+.reseaux{
+    padding-top: 65px;
+}
+.contact a{
+    text-decoration: none;
+    color:blanchedalmond;
+}
+
+/* FORMULAIRE */
+
+input[type=text]{
+    color:blanchedalmond;
+    width: 300px;
+    height: 30px;
+}
+
+/* BUTTON */
+button{
+    border-radius: 5px;
+    background-color:rgb(255, 235, 205);
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 16px;
+    color: black;
+    width: 165px;
+    height: 40px;
+    font-weight: bold;
+}
+button:hover{
+    color:white;
+    background-color:black;
+}
+
+/* IMAGES */
+
+#bg, #all-event, #all-menu, #infos, #contact{
+    background-image: url(../img/etoiles1.jpg);
+    padding-bottom: 100px;
+    background-size: cover;
+}
+
+#hero{
+    background-image: url(../img/bg.jpg);
+    background-attachment:fixed, local;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+#img-cocktail{
+    background-image: url(../img/cocktail1.jpg);
+    background-size:cover;
+    background-attachment:fixed, local;
+    margin-bottom: 75px;
+    padding:350px;
+}
+img{
+    border-radius: 10px;
+}
+
+/* PAGE 2 - MENU */
+
+.notre-menu{
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+#menu{
+    text-align: center;
+    margin-bottom: 50px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+.boites{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    text-align: left;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+.colonnes{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 3px dotted blanchedalmond;
+    margin-bottom: 20px;
+}
+.boites-2{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    text-align: left;
+    
+}
+
+/* PAGE 3 - CONCERTS */
+
+#all-event{
+    justify-content: center;
+}
+#event{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 70px;
+}
+.event{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 35px;
+}
+.time-event{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin-left: 400px; 
+}
+.artist-event{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin-right: 300px;
+}
+.btn-event{
+    display: flex;
+    flex-direction: row;
+    justify-content:right;
+    align-items: center;
+    margin-right: 400px;
+}
+
+/* NAV
+********************************** */
+
+nav{
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+} 
+
+/* PAGE QUI SOMMES NOUS ? */
+
+#all-event, #all-menu, #infos, #contact{
+    padding-top: 100px;
+}
+.infos p{
+    padding-left: 300px;
+    padding-right: 300px;
+}
+.img-bar{
+    background-image: url(../img/bar.jpg);
+    background-size:cover;
+    background-attachment:fixed, local;
+    margin-bottom: 75px;
+    padding:300px;
+    margin-top: -30px;
+}
+
+/*  */
+
+.le-menu{
+    background-image: url(../img/menu.jpg);
+    background-size:cover;
+    background-attachment:fixed, local;
+    margin-bottom: 75px;
+    padding:300px;
+    margin-top: -30px;
+}
+.la-musique{
+    background-image: url(../img/musique.jpg);
+    background-size:cover;
+    background-attachment:fixed, local;
+    margin-bottom: 75px;
+    padding:300px;
+    margin-top: -30px;
+}
